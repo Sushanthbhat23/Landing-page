@@ -44,6 +44,9 @@
         height: 250px;
         margin-top: 0px;
         padding-top: 0px;
+        display: flex;
+        align-items: center;   
+        justify-content: space-between; 
        }
        .Website-awesome{
         margin-top: 0px;
@@ -55,6 +58,10 @@
         margin-left: 150px;
         margin-bottom: 0px;
         padding-bottom: 0px;
+        
+       }
+       text-content { 
+           flex: 1;
        }
        .subtext{
         color: #E5E7EB;
@@ -63,6 +70,13 @@
         padding-top: 0px;
         width: 360px;
         margin-left: 150px;
+        
+       }
+       .content-1 img {
+           width: 400px;
+           height: auto;
+           margin-right: 150px; 
+           
        }
        
 
@@ -80,9 +94,11 @@
 
     
     <div class="content-1">
-        <p class="Website-awesome">This website is awesome </p>
-        <p class="subtext">This is a subtext that goes under the main title. It has a smaller font and the color has a lower contrast</p> 
-        
+        <div class="text-content-header">
+            <p class="Website-awesome">This website is awesome </p>
+            <p class="subtext">This is a subtext that goes under the main title. It has a smaller font and the color has a lower contrast</p> 
+        </div>
+        <img src="images.jpg"  class="content-1-img">
     </div>
     
 </body>
